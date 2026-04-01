@@ -15,7 +15,8 @@ open tictactoe.html
 
 - **Zero dependencies, zero build tools.** Everything is plain HTML + CSS + JS in a single self-contained file per game.
 - **No external assets.** All sprites are drawn procedurally with the Canvas 2D API (colored rectangles simulating pixel art).
-- **Git workflow:** commit and push after every meaningful change. The `gh` CLI binary lives at `/opt/homebrew/bin/gh` — the shell alias `gh` is broken (`history|grep`), so always use the full path.
+- **Git workflow:** after every meaningful piece of work (new feature, bug fix, refactor), stage the relevant files, write a clean descriptive commit message, and push to GitHub immediately. Never leave work uncommitted — every session should end with a clean `git status`. The `gh` CLI binary lives at `/opt/homebrew/bin/gh` — the shell alias `gh` is broken (`history|grep`), so always use the full path.
+- **Commit message format:** short imperative subject line (e.g. `Fix particle arc radius crash on enemy death`), followed by a blank line and a brief body if the change needs explanation.
 
 ## shooter.html architecture
 
